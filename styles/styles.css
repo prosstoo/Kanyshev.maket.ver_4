@@ -71,28 +71,28 @@
 }
 /*В кнопках красный круглишок нужно сделать через чистый цсс, картинка должна быть бэкграундом. Назначать через модификатор*/
 .header-menu__button_burger {
-    background-image: url(/img/uppermenu/bg-burger2.png);
+    background-image: url(./img/uppermenu/bg-burger2.png);
     background-size: 16px;
 }
 
 .header-menu__button_found{
-    background-image: url(/img/uppermenu/found.png);
+    background-image: url(./img/uppermenu/found.png);
     background-size: 17.06px;
 }
 
 .header-menu__button_call{
-    background-image: url(/img/uppermenu/bg-call.png);
+    background-image: url(./img/uppermenu/bg-call.png);
     background-size: 17.96px;
 }
 
 .header-menu__button_chat{
 
-    background-image: url(/img/uppermenu/bg-chat.png);
+    background-image: url(./img/uppermenu/bg-chat.png);
     background-size: 20px;
 }
 
 .header-menu__button_profile {
-    background-image: url(/img/uppermenu/bg-profile.png);
+    background-image: url(./img/uppermenu/bg-profile.png);
     background-size: 20px 18px;
 }
 
