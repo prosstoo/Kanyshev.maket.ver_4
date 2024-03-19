@@ -11,18 +11,10 @@
     <header class="header">
         <div class="header_wrapper">
             <div class="header-navigation">
-                <button class="header-menu__button">
-                    <span class="header-menu__button_circle">
-                        <img class="header-menu__button_burger" src="img/uppermenu/bg-burger2.png" alt="Menu">
-                    </span>
-                </button>
-                <img class="header-menu__button_logo" src="img/uppermenu/group.png"  alt="Logo">
+                <button class="header-menu__button header-menu__button_burger"></button>
+                <img class="header-menu__button_logo" src="img/uppermenu/group.svg"  alt="Logo">
             </div>
-            <button class="header-menu__button">
-                <span class="header-menu__button_circle ">
-                    <img class="header-menu__button_found" src="img/uppermenu/found.png" alt="Found">
-                </span>
-            </button>
+            <button class="header-menu__button header-menu__button_found"> </button>
         </div>
     </header>
     <main class="main">
@@ -57,36 +49,54 @@
         <nav class="nav-list__icon">
             <ul class="nav-list__icon-menu">
                 <li class="nav-list__icon-item">
-                    <button class="header-menu__button">
-                    <span class="header-menu__button_circle">
-                        <img class="header-menu__button_call" src="img/uppermenu/bg-call.png" alt="Call">
-                    </span>
-                </button>
+                    <button class="header-menu__button header-menu__button_call"></button>
                 </li>
                 <li class="nav-list__icon-item">
-                    <button class="header-menu__button">
-                    <span class="header-menu__button_circle">
-                        <img class="header-menu__button_chat" src="img/uppermenu/bg-chat.png" alt="Chat">
-                    </span>
-                </button>
+                    <button class="header-menu__button header-menu__button_chat"></button>
                 </li>
                 <li class="nav-list__icon-item">
-                    <button class="header-menu__button">
-                    <span class="header-menu__button_circle">
-                        <img class="header-menu__button_profile" src="img/uppermenu/bg-profile.png" alt="Profile">
-                    </span>
-                </button>
+                    <button class="header-menu__button header-menu__button_profile"></button>
                 </li>
             </ul>
         </nav>
         <div class="main-contact">
-            <a href="mailto:mail@cps.com" class=" main-contact__email">mail@cps.com</a>
+            <a href="mailto:mail@cps.com" class="main-contact__email">mail@cps.com</a>
             <a href="tel: 8 800 890 8900" class="main-contact__tel">8 800 890 8900</a>
-            <ul class="main-contact__list">
-                <li class="main-contact__item main-contact__item__active">RU</li>
+            <div class="main-contact__list">
+                <!-- <label for="langru"><input type="checkbox" id="langru" name="langru" checked><span class="main-contact__item">RU</span></label>
+                <label for="langen"><input type="checkbox" id="langen" name="langen"><span class="main-contact__item">EN</span></label>
+                <label for="langch"><input type="checkbox" id="langch" name="langch"><span class="main-contact__item">CH</span></label> -->
+                <!-- <input type="checkbox" class="main-contact__item main-contact__item__active" id="langru" name="langru" value="yes" checked>
+                    <label for="langru">RU</label>
+                <input type="checkbox" class="main-contact__item" id="langen" name="langen" value="no">
+                    <label for="langen">EN</label>
+                <input type="checkbox" class="main-contact__item" id="langch" name="langch" value="no">
+                    <label for="langch">CH</label> -->
+                <!-- <li class="main-contact__item main-contact__item__active">RU</li>
                 <li class="main-contact__item">EN</li>
-                <li class="main-contact__item">CH</li>
-            </ul>
+                <li class="main-contact__item">CH</li> -->
+                <!-- <label class="main-contact__item">
+                    <input type="radio" checked><span>RU</span>
+                </label> 
+                <label class="main-contact__item">
+                    <input type="radio"><span>EN</span>
+                </label>
+                <label class="main-contact__item">
+                    <input type="radio"><span>CH</span>
+                </label> -->
+                <div class="main-contact__item">
+                    <input id="radio-RU" type="radio" name="radio" checked>
+                    <label for="radio-RU">RU</label>
+                </div>
+                <div class="main-contact__item">
+                    <input id="radio-EN" type="radio" name="radio">
+                    <label for="radio-EN">EN</label>
+                </div>
+                <div class="main-contact__item">
+                    <input id="radio-CH" type="radio" name="radio">
+                    <label for="radio-CH">CH</label>
+                </div>
+            </div>
         </div>
     </main>
 </div>

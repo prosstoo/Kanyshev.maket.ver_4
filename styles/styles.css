@@ -47,47 +47,53 @@
 }
 
 .header-menu__button {
-    border: none;
-    background: none;
-}
-
-.header-menu__button_circle {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FF3E79;
+    border: none;
+    background: none;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*Нужны ховер эффекты на кнопках*/
+.header-menu__button:hover {
+    border:3px solid #41F6D7;
+    opacity: 0.6;
 }
 
 .header-menu__button_logo {
     width: 96px;
     height: 50px;
 }
-.header-menu__button_burger{
-    width: 16px;
-    height: 16px;
+/*В кнопках красный круглишок нужно сделать через чистый цсс, картинка должна быть бэкграундом. Назначать через модификатор*/
+.header-menu__button_burger {
+    background-image: url(/img/uppermenu/bg-burger2.png);
+    background-size: 16px;
 }
 
 .header-menu__button_found{
-    width: 17.06px;
-    height: 17.06px;
+    background-image: url(/img/uppermenu/found.png);
+    background-size: 17.06px;
 }
 
 .header-menu__button_call{
-    width: 17.96px;
-    height: 17.96px;
+    background-image: url(/img/uppermenu/bg-call.png);
+    background-size: 17.96px;
 }
 
 .header-menu__button_chat{
-    width: 20px;
-    height: 20px;
+
+    background-image: url(/img/uppermenu/bg-chat.png);
+    background-size: 20px;
 }
 
 .header-menu__button_profile {
-    width: 20px;
-    height: 18px;
+    background-image: url(/img/uppermenu/bg-profile.png);
+    background-size: 20px 18px;
 }
 
 .nav-list {
@@ -103,6 +109,8 @@
 }
 
 .nav-list__link {
+    display: flex; /*Ссылку нужно растягивать на всю ширину меню, что бы можно было проще нажимать на нее*/
+    flex-grow: 1;
     font-family: "TT Lakes Medium";
     font-size: 16px;
     line-height: 24px;
@@ -115,7 +123,6 @@
 .nav-list__item {
     padding-top: 7px;
     padding-bottom: 7px;
-
 }
 
 .nav-list__link:hover {
@@ -167,14 +174,24 @@
     gap: 7px;
     margin-bottom: 20px;
 }
-
+/*языки это интерактивные элементы. лучше всего сюда подойдет радиобуттон, так как язык может быть выбран только один*/
 .main-contact__item {
+	display: inline-block;
+	margin-right: 10px;
+}
+.main-contact__item input[type=radio] {
+	display: none;
+}
+.main-contact__item label {
+	display: inline-block;
+	cursor: pointer;
     font-family: "TT Lakes Medium";
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
+    color: #1B1C21;
+	user-select: none;
 }
-
-.main-contact__item__active {
-    color: #7E7E82;
+.main-contact__item input[type=radio]:checked + label {
+	color: #7E7E82;
 }
